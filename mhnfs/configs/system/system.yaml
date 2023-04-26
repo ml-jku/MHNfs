@@ -1,0 +1,16 @@
+data:
+  path:  # TODO: Set path to data
+  dir_training: "training/"
+  dir_validation: "validation/"
+  dir_test: "test/"
+  name_mol_ids: "mol_ids.npy"
+  name_target_ids: "task_ids.npy"
+  name_mol_inputs: "mol_inputs.npy"
+  name_labels: "labels.npy"
+  name_dict_mol_smiles_id: "dict_mol_smiles_id.pkl"
+  name_dict_target_id_activeMolecules: "dict_task_id_activeMolecules.pkl"
+  name_dict_target_id_inactiveMolecules: "dict_task_id_inactiveMolecules.pkl"
+  name_dict_target_names_id: "dict_task_names_id.pkl"
+ressources:
+  num_workers_cpu: 40
+  device: "cuda"

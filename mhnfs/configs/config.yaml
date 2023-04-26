@@ -1,0 +1,21 @@
+defaults:
+  - system: system
+  - model:  mhnfs
+supportSet:
+  stratified:
+    stratifiedSplit: true
+    supportSetSize: 16
+    paddingSize: 12
+context:
+  ratio_training_molecules: 0.05
+training:
+  seed: 1234
+  epochs: 350
+validation:
+  batchSize: 10
+test:
+  batchSize: 10
+experiment_name: mhnfs
+project_name: fsmol
+
+
