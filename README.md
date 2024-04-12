@@ -10,7 +10,7 @@
     This repo is helpful, if you want to train and evaluate MHNfs on FS-Mol. Adaption to other datasets should be quite simple as long as the new data is preprocessed in the way FS-Mol was preprocessed. This repo includes:  
     * Code to train and evaluate MHNfs on the benchmark experiment FS-Mol.
     * Code for data preprocessing
-    * Competitors (Neural Similarity Search, ProtoNet, IterRefLSTM) #TODO
+    * Competitors
 - **Huggingface / Streamlit repo**:<br>
     We recommend this repo, if you want to run the trained MHNfs model in inference mode.
     * MHNfs was trained on FS-Mol
