@@ -131,10 +131,12 @@ iterref = IterRef.load_from_checkpoint(
     ".iterref/epoch=35-step=7524.ckpt")
 ```
 
-# Overview
-- mhnfs: includes code for the MHNfs modl
-- baselines: includes code for the baselines: Frequent Hitters model, Classic Similarity Search, and IterRefLSTM
-- preprocessing: includes notebooks for data preprocessing 
-
-## Requirements
-If you want to train MHNfs on FS-Mol, you will not a a GPU with approx 20GB RAM.
+## 📚 Cite us
+@inproceedings{
+    schimunek2023contextenriched,
+    title={Context-enriched molecule representations improve few-shot drug discovery},
+    author={Johannes Schimunek and Philipp Seidl and Lukas Friedrich and Daniel Kuhn and Friedrich Rippmann and Sepp Hochreiter and Günter Klambauer},
+    booktitle={The Eleventh International Conference on Learning Representations},
+    year={2023},
+    url={https://openreview.net/forum?id=XrMWUuEevr}
+}
