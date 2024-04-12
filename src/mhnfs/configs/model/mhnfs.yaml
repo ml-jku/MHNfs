@@ -1,0 +1,41 @@
+name: MHNfs
+encoder:
+  activation: selu
+  input_dim: 2248
+  number_hidden_layers: 0
+  number_hidden_neurons: 1024 #128  #
+  regularization:
+    input_dropout: 0.1
+    dropout: 0.5
+layerNormBlock:
+  affine: False
+  usage: True
+transformer:
+  activity_embedding_dim: 64 #512 # 64
+  number_heads: 8
+  dim_forward: 567
+  dropout: 0.5
+  num_layers: 1
+  ss_dropout: 0.1
+hopfield:
+  dim_QK: 512 # 8 #512
+  heads: 8
+  beta: 0.044194173824159216 #0.08838834764831843 #
+  dropout: 0.5
+prediction_scaling: 0.044194173824159216 #0.08838834764831843 #
+associationSpace_dim: 1024 #512 # 1024 #128 # 
+similarityModule:
+  type: cosineSim
+  l2Norm: False
+  scaling: 1/N # 1/sqrt(N)
+training:
+  optimizer: AdamW
+  batch_size: 512
+  lr: 0.0001 #0.0001 # to do change
+  weightDecay: 0.0
+  lrScheduler:
+    usage: True
+context:
+  ratio_training_molecules: 0.05
+
+
