@@ -42,7 +42,7 @@ conda env create -f env.yml -n your_env_name
 conda activate your_env_name
 ```
 
-### ✅ Evaluate trained MHNfs on FS-Mol
+## ✅ Evaluate trained MHNfs on FS-Mol
 ```bash
 # Move into experiment folder
 cd ./src/fsmol_benchmarking_experiment/
@@ -51,7 +51,7 @@ cd ./src/fsmol_benchmarking_experiment/
 python evaluate_testset_performance.py
 ```
 
-### 〽️ Train MHNfs
+## 〽️ Train MHNfs
 **Load preprocessed FS-Mol data**
 ```bash
 # Move to location at which data should be stored
@@ -132,6 +132,7 @@ iterref = IterRef.load_from_checkpoint(
 ```
 
 ## 📚 Cite us
+```
 @inproceedings{
     schimunek2023contextenriched,
     title={Context-enriched molecule representations improve few-shot drug discovery},
@@ -140,3 +141,4 @@ iterref = IterRef.load_from_checkpoint(
     year={2023},
     url={https://openreview.net/forum?id=XrMWUuEevr}
 }
+```
